@@ -360,7 +360,7 @@ const projects = [
       
       <div className="fixed inset-0 pointer-events-none z-[99] opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')]"></div>
 
-      {/* ENHANCED NAVBAR - RETRO PIXELATED STYLE */}
+      {/* ENHANCED NAVBAR - PIXELATED STYLE */}
       <motion.nav 
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
