@@ -1,0 +1,270 @@
+@import "tailwindcss";
+
+:root {
+  --bg-main: #F3EEEA;
+  --color-text: #776B5D;
+}
+
+@layer base {
+  body {
+    background-color: var(--bg-main);
+    color: var(--color-text);
+    font-family: 'Inter', sans-serif;
+    scroll-behavior: smooth;
+    cursor: auto; /* Memastikan kursor sistem muncul */
+  }
+}
+
+.glass-earth {
+  background: rgba(243, 238, 234, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #776B5D, #B0A695);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Scrollbar Style */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F3EEEA;
+}
+::-webkit-scrollbar-thumb {
+  background: #B0A695;
+  border-radius: 10px;
+}
+
+/* Animasi CSS untuk pixel pets yang lebih smooth */
+@keyframes pixel-dog-walk {
+  0%, 100% { 
+    transform: translateX(0) translateY(-50%); 
+  }
+  25% { 
+    transform: translateX(10px) translateY(calc(-50% - 3px)); 
+  }
+  50% { 
+    transform: translateX(20px) translateY(-50%); 
+  }
+  75% { 
+    transform: translateX(10px) translateY(calc(-50% + 3px)); 
+  }
+}
+
+@keyframes pixel-cat-walk {
+  0%, 100% { 
+    transform: translateX(0) translateY(-50%); 
+  }
+  25% { 
+    transform: translateX(-10px) translateY(calc(-50% - 2px)); 
+  }
+  50% { 
+    transform: translateX(-20px) translateY(-50%); 
+  }
+  75% { 
+    transform: translateX(-10px) translateY(calc(-50% + 2px)); 
+  }
+}
+
+@keyframes pixel-tail-wag {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(15deg); }
+  75% { transform: rotate(-15deg); }
+}
+
+@keyframes pixel-tail-wag-reverse {
+  0%, 100% { transform: rotate(0deg); }
+  25% { transform: rotate(-15deg); }
+  75% { transform: rotate(15deg); }
+}
+
+@keyframes pixel-bird-fly {
+  0%, 100% { 
+    transform: translateY(0) translateX(0); 
+    opacity: 0.8;
+  }
+  33% { 
+    transform: translateY(-6px) translateX(4px); 
+    opacity: 1;
+  }
+  66% { 
+    transform: translateY(3px) translateX(-4px); 
+    opacity: 0.8;
+  }
+}
+
+@keyframes pixel-bird-fly-delayed {
+  0%, 100% { 
+    transform: translateY(0) translateX(0); 
+    opacity: 0.6;
+  }
+  33% { 
+    transform: translateY(-4px) translateX(-3px); 
+    opacity: 0.9;
+  }
+  66% { 
+    transform: translateY(2px) translateX(3px); 
+    opacity: 0.6;
+  }
+}
+
+@keyframes pixel-wing-flap {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.8); }
+}
+
+@keyframes pixel-wing-flap-slow {
+  0%, 100% { transform: scaleY(1); }
+  50% { transform: scaleY(0.7); }
+}
+
+@keyframes pixel-trail {
+  0% { 
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% { 
+    opacity: 0.3;
+    transform: scale(1);
+  }
+  100% { 
+    opacity: 0;
+    transform: scale(0.5);
+  }
+}
+
+@keyframes pixel-trail-particle {
+  0% {
+    opacity: 0;
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-4px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes pixel-fly-up {
+  0% {
+    opacity: 0;
+    transform: translateY(0) scale(0.5);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(-4px) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-12px) scale(0.5);
+  }
+}
+
+@keyframes pixel-bounce {
+  0%, 100% { transform: translateY(-50%) scale(1); }
+  50% { transform: translateY(calc(-50% - 4px)) scale(1.1); }
+}
+
+@keyframes pixel-bounce-delayed {
+  0%, 100% { transform: translateY(-50%) scale(1); }
+  50% { transform: translateY(calc(-50% + 4px)) scale(0.9); }
+}
+
+@keyframes pixel-bounce-fast {
+  0%, 100% { transform: translate(0, 0); }
+  33% { transform: translate(2px, -2px); }
+  66% { transform: translate(-2px, 2px); }
+}
+
+@keyframes pixel-spin {
+  0% { transform: rotate(0deg) scale(1); }
+  50% { transform: rotate(180deg) scale(1.2); }
+  100% { transform: rotate(360deg) scale(1); }
+}
+
+@keyframes pixel-orbit {
+  0% { 
+    transform: rotate(0deg) translateX(4px) rotate(0deg); 
+  }
+  100% { 
+    transform: rotate(360deg) translateX(4px) rotate(-360deg); 
+  }
+}
+
+/* Class animations */
+.animate-pixel-dog-walk {
+  animation: pixel-dog-walk 6s ease-in-out infinite;
+}
+
+.animate-pixel-cat-walk {
+  animation: pixel-cat-walk 7s ease-in-out infinite;
+}
+
+.animate-pixel-tail-wag {
+  animation: pixel-tail-wag 0.5s ease-in-out infinite;
+}
+
+.animate-pixel-tail-wag-reverse {
+  animation: pixel-tail-wag-reverse 0.6s ease-in-out infinite;
+}
+
+.animate-pixel-bird-fly {
+  animation: pixel-bird-fly 4s ease-in-out infinite;
+}
+
+.animate-pixel-bird-fly-delayed {
+  animation: pixel-bird-fly-delayed 5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+.animate-pixel-wing-flap {
+  animation: pixel-wing-flap 0.4s ease-in-out infinite;
+}
+
+.animate-pixel-wing-flap-slow {
+  animation: pixel-wing-flap-slow 0.6s ease-in-out infinite;
+}
+
+.animate-pixel-trail {
+  animation: pixel-trail 1.5s ease-in-out infinite;
+}
+
+.animate-pixel-trail-particle {
+  animation: pixel-trail-particle 0.8s ease-out forwards;
+}
+
+.animate-pixel-fly-up {
+  animation: pixel-fly-up 1s ease-out forwards;
+}
+
+.animate-pixel-bounce {
+  animation: pixel-bounce 1.8s ease-in-out infinite;
+}
+
+.animate-pixel-bounce-delayed {
+  animation: pixel-bounce 1.8s ease-in-out infinite;
+  animation-delay: 0.9s;
+}
+
+.animate-pixel-bounce-fast {
+  animation: pixel-bounce-fast 0.6s ease-in-out infinite;
+}
+
+.animate-pixel-spin {
+  animation: pixel-spin 4s linear infinite;
+}
+
+.animate-pixel-orbit {
+  animation: pixel-orbit 3s linear infinite;
+}
+
+.animate-pixel-blink {
+  animation: pixel-blink 2s ease-in-out infinite;
+}
