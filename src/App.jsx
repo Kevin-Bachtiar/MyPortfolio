@@ -245,36 +245,6 @@ const App = () => {
           "Article recommendations aligned with user reading history",
           "Easier access for users",
         ]
-  },
-  { 
-  title: language === 'id' ? "Fullstack Developer Freelance" : "Fullstack Developer Freelance", 
-  company: language === 'id' ? "Kepolisian Resor Jember" : "Jember Police Resort",
-  preview: language === 'id'
-    ? "Mengembangkan sistem internal berbasis web untuk mendukung pengelolaan data dan proses operasional harian."
-    : "Developing an internal web-based system to support data management and daily operational processes.",
-  year: language === 'id' ? "Desember 2025 – Sekarang" : "December 2025 – Present",
-  description: language === 'id'
-    ? "Bekerja sebagai Fullstack Developer freelance di Kepolisian Resor Jember dengan tanggung jawab merancang dan mengembangkan sistem internal berbasis web. Sistem ini digunakan untuk mempermudah pengelolaan data serta mendukung proses operasional harian yang sebelumnya masih dilakukan secara manual. Fokus pengembangan diarahkan pada peningkatan efisiensi, akurasi data, serta kemudahan penggunaan dibandingkan metode konvensional seperti spreadsheet. Dalam prosesnya, saya juga berkoordinasi langsung dengan pihak terkait untuk memastikan sistem yang dibangun sesuai dengan kebutuhan dan alur kerja di lapangan."
-    : "Working as a freelance Fullstack Developer at Jember Police Resort, responsible for designing and developing an internal web-based system. The system aims to streamline data management and support daily operational processes that were previously handled manually. The development focuses on improving efficiency, data accuracy, and usability compared to conventional methods such as spreadsheets. I also collaborate closely with stakeholders to ensure the system aligns with real operational needs.",
-  images: [
-    {
-      url: "images/photo/Comingsoon.jpg",
-      alt: "System Preview",
-      caption: language === 'id' ? "Tampilan sistem (segera tersedia)" : "System preview (coming soon)"
-    }
-  ],
-  tech: ["Laravel", "PHP", "MySQL", "Bootstrap", "JavaScript"],
-  achievements: language === 'id'
-    ? [
-        "Meningkatkan efisiensi pengelolaan data internal",
-        "Mengurangi ketergantungan pada pencatatan manual",
-        "Sistem disesuaikan dengan kebutuhan operasional nyata"
-      ]
-    : [
-        "Improved efficiency of internal data management",
-        "Reduced reliance on manual record-keeping",
-        "System tailored to real operational needs"
-      ]
   }
 ];
 
