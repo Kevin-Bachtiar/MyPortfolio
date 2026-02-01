@@ -245,9 +245,9 @@ const ProjectsSection = ({ t, projects }) => {
                       </p>
                     </div>
 
-                    <a href={p.link} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-[#776B5D] text-white py-3 text-[10px] font-black tracking-widest hover:bg-[#B0A695] shadow-[4px_4px_0px_0px_#B0A695]">
+                    {/* <a href={p.link} target="_blank" rel="noreferrer" className="flex items-center justify-center gap-2 bg-[#776B5D] text-white py-3 text-[10px] font-black tracking-widest hover:bg-[#B0A695] shadow-[4px_4px_0px_0px_#B0A695]">
                       OPEN_PROJECT <FiExternalLink />
-                    </a>
+                    </a> */}
                   </div>
 
                   {/* DEFAULT LABEL (Hanya muncul jika Panel Tertutup) */}
