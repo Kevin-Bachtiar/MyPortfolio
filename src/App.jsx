@@ -186,7 +186,7 @@ const App = () => {
     preview: language === 'id'
       ? "Mengembangkan sistem backend untuk platform keuangan berbasis Earned Wage Access."
       : "Developed a backend system for an Earned Wage Access-based financial platform.",
-    year: "Januari 2025 - Februari 2025",
+    year: "Januari 2025 - Maret 2025",
     description: language === 'id'
       ? "Mengembangkan sistem backend untuk platform keuangan berbasis Earned Wage Access. Membuat dan mengelola dashboard admin untuk pengolahan data keuangan dan penggajian. Menjaga keamanan serta struktur data agar sesuai dengan kebutuhan operasional perusahaan."
       : "Developed a backend system for an Earned Wage Access-based financial platform. Created and managed an admin dashboard for processing financial and payroll data. Maintained security and data structure to meet the company's operational needs.",
